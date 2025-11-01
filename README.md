@@ -177,3 +177,7 @@ If turbine isentropic efficiency (
 )
 
 This accounts for real-world losses in the turbine.
+
+MATLAB Graph explanation
+
+For visualizing turbine energy balancing, a common approach is to plot shaft power versus mass flow rate, which shows how turbine power increases linearly with mass flow when inlet and outlet enthalpies are constant, and can include multiple curves for different turbine efficiencies to illustrate the effect of efficiency; alternatively, plotting shaft power versus actual outlet enthalpy produces a decreasing curve because as outlet enthalpy increases, less energy is extracted and shaft power decreases, while comparing actual versus isentropic outlet enthalpy against turbine efficiency yields a decreasing linear trend where higher efficiencies bring the actual enthalpy closer to the ideal isentropic value; optionally, if tracking outlet temperature or pressure, plotting mass flow versus outlet temperature or pressure can provide additional insight into system behavior. Graphs should use line plots with markers for discrete points, clearly labeled axes including units (e.g., kW, MW, kJ/kg, kg/s), grid lines for readability, and legends to distinguish curves for different efficiencies or inlet conditions, for example using plot(mdot_array, W_dot_array,'-o','LineWidth',2) for a single curve and hold on with additional plot commands for multiple efficiencies, which together allow clear visualization of turbine performance trends under varying operating conditions.
