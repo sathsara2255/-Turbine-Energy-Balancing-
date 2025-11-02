@@ -1,4 +1,6 @@
 # -Turbine-Energy-Balancing-(Thermodynamics)
+
+Thermodynamic BASED MODEL
 The models are designed for educational and research purposes, and demonstrate how turbine efficiency and inlet/outlet conditions affect energy conversion from steam to mechanical work.
 
 This repository contains a Simulink model and associated MATLAB scripts for energy balancing of a steam turbine system. The project focuses on analyzing the thermodynamic performance of the turbine using the mass-energy balance principle, including isentropic and actual enthalpy calculations, as well as shaft power output.
